@@ -1,0 +1,25 @@
+{
+  "name": "mini-mart",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.29.1",
+  "scripts": {
+    "build": "node api.js && turbo run build",
+    "dev": "node api.js && turbo run dev",
+    "lint": "turbo run lint",
+    "typecheck": "turbo run typecheck",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.35.0",
+    "eslint": "^9.35.0",
+    "prettier": "^3.6.2",
+    "turbo": "^2.5.8",
+    "typescript": "~5.9.2",
+    "typescript-eslint": "^8.44.0",
+    "eslint-config-prettier": "^10.1.8"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
