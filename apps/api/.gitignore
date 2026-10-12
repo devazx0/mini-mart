@@ -1,0 +1,11 @@
+node_modules
+# Keep environment variables out of version control
+.env
+
+/generated/prisma
+/src/generated/prisma
+# Local product image uploads (served from /uploads, never commit contents)
+# The folder itself is created at runtime via mkdir; keep this ignore.
+uploads/
+uploads/*
+!/uploads/.gitkeep
